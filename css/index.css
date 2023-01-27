@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+#btn-mas{
+display: none;
+}
+.cotenido{
+position: fixed;
+bottom: 10px;
+left: 20px;
+ z-index:99;
+}
+.redes {
+display: flex;
+flex-direction: column;
+width: 250px;
+opacity: 0;
+transition: all 500ms ease;
+visibility: hidden;
+box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+border-radius: 10px;
+color: #fff;
+background: #fff;
+
+}
+.redes .encabezado{
+display: flex;
+flex-direction: column;
+background: #202c33;
+color: #fff;
+padding: 15px 10px;
+border-radius: 10px 10px 0px 0px;
+}
+.redes .encabezado b{
+font-size: 20px;
+padding-bottom: 5px;
+}
+.redes .agentes  i{
+font-size: 25px;
+padding: 10px;
+margin: 5px 10px;
+color: #fff;
+background: #06872a;
+border-radius: 100px;
+
+}
+.redes .agentes ul{
+list-style: none;
+
+
+}
+.agentes{
+overflow: auto;
+max-height: 300px;
+
+}
+.redes .agentes li{
+color: #000;
+font-size: 18px;
+font-weight: 500;
+}
+.redes .agentes a{
+color: #585858;
+text-decoration: none;
+cursor: pointer;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.redes .agentes a:hover{
+color: #000;
+}
+.redes .agentes::-webkit-scrollbar {
+-webkit-appearance: none;
+}
+
+.redes .agentes::-webkit-scrollbar:vertical {
+width:10px;
+}
+
+.redes .agentes::-webkit-scrollbar-button:increment,.redes .agentes::-webkit-scrollbar-button {
+display: none;
+} 
+
+.redes .agentes::-webkit-scrollbar:horizontal {
+height: 10px;
+}
+
+.redes .agentes::-webkit-scrollbar-thumb {
+background-color: #777;
+border-radius: 20px;
+border: 2px solid #777;
+}
+
+.redes .agentes::-webkit-scrollbar-track {
+border-radius: 10px;  
+}
+
+
+
+#btn-mas:checked~ .redes {
+margin-bottom: 5px;
+opacity: 1;
+visibility: visible;
+}
+
+p, b {
+text-align: center;
+}
+
+
+.agentes ul img {
+margin: 5px 0;
+}
+
+ul li a #files, #colores{
+position: absolute;
+width: 100%;
+opacity: 0;
+}
+ul li a #colores{
+height: 40px;
+}
+
+a:hover {
+background-color: #9d9999;
+
+}
