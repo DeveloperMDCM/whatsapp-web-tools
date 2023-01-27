@@ -358,6 +358,6 @@
  
        }
      }, 1000);
-       cargarScript();
+      // cargarScript(); si es la extencion
  })();
  
