@@ -144,9 +144,7 @@
         }
  
  
-        ul a img {
-         margin: 5px 0;
-        }
+     
  
         ul li a #files{
          position: absolute;
